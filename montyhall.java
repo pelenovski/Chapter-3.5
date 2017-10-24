@@ -10,6 +10,7 @@ public class montyhall
 	public static void main (String[] args)
 	{
 		int d1 = 0, d2 = 0, d3 = 0;
+		num = 0
 
 		for (int i = 0; i < 1000; i++)
 		{
@@ -21,13 +22,10 @@ public class montyhall
 				d2 = 1;
 			if (d3.equalsTo(num + "3"))
 				d3 = 1;
+
+			num = generator.nextInt(3);
+			choice = "d" + num;
 		}
 	}
 }
 
-
-
-
-
-	}
-}
