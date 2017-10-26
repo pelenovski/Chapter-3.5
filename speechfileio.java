@@ -10,7 +10,7 @@ public class speechfileio
 {
 	public static void main (String[] args)
 	{
-
+		Scanner scanFile = new Scanner(new File ("
 
 
 
