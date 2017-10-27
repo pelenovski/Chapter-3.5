@@ -23,8 +23,10 @@ public class montyhall
 			if (select == pdoor)
 				opendoor = (pdoor + 1 + generator.nextInt(2))%3;
 			else
+				//Determines open door by removing prize door and selected door as options
 				opendoor = (0 + 1 + 2) - select- pdoor;
 
+			//Determines switch door by removing selected and open door as options
 			int switchdoor = (0 + 1 + 2) - select - opendoor;
 
 			if (select == pdoor)
