@@ -2,7 +2,7 @@ import TurtleGraphics.StandardPen;
 import java.util.Random;
 import java.awt.*;
 
-public class DrawSquare
+public class FourLeaf
 {
 public static void main(String[] args)
 {
