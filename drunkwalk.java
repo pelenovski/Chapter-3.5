@@ -23,13 +23,13 @@ public class drunkwalk
 			
 			//Adds or substracts 1 from x or y depending on num generated
 			if (m == 1)
-				x+=1;
+				x++;
 			if (m == 2)
-				x-=1;
+				x--;
 			if (m == 3)
-				y+=1;
+				y++;
 			if (m == 4)
-				y-=1;
+				y--;
 			//Moves pen to that coordinate each time until x equals 250
 			pen.move(x,y);
 			
