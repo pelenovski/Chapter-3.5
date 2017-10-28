@@ -12,13 +12,26 @@ public class drunkwalk
 	public static void main(String[] args)
 	{
 		Random generator = new Random();
-
-		int m = generator.nextInt(5)+1
-
-
-		for
-
-
-
+		pen.down();
+		int m;
+		
+		for (x = 0; x <= 250; x++)
+			//Generates random num in between 1 and 4 inclusive
+			m = generator.nextInt(5)+1;
+			double x;
+			double y;
+			
+			//Adds or substracts 1 from x or y depending on num generated
+			if (m == 1)
+				x+=1;
+			if (m == 2)
+				x-=1;
+			if (m == 3)
+				y+=1;
+			if (m == 4)
+				y-=1;
+			//Moves pen to that coordinate each time until x equals 250
+			pen.move(x,y);
+			
 	}
 }
