@@ -10,7 +10,7 @@ public class FileIO
 {
     public static void main (String []args) throws IOException
     {
-        Scanner scanFile = new Scanner(new File("data\\speech1.txt"));
+        Scanner scanFile = new Scanner(new File("data\\fillmore.txt"));
         int countwords = 0, countcharacters = 0, countwar = 0, countfreedom = 0;
         double average = 0.0;
         char letter;
@@ -24,12 +24,12 @@ public class FileIO
             countcharacters = word.length() + countcharacters;
             countwords++;
             if (word.contains("war"))
-                count_peace++;
+                countwar++;
 
             if (word.contains("freedom"))
-                count_people++;
+                countfreedom++;
         }
-        avg = countcharacters/countwords;
+        average = countcharacters/countwords;
         System.out.println("The average length of each word: " + average);
         System.out.println("The total number of words: " + countwords);
         System.out.println("The word 'war' was said " + countwar + " times");
@@ -38,3 +38,14 @@ public class FileIO
 
     }
 }
+
+
+//OUTPUT:
+
+//1850
+//Millard Filmore
+//The average length of each word: 4.0
+//The total number of words: 8318
+//The word 'war' was said 11 times
+//The word 'freedom' was said 1 times
+//Press any key to continue . . .

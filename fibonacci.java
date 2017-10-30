@@ -33,3 +33,9 @@ public class fibonacci
 			}
 	}
 }
+
+//Enter how long you would like the sequence to be.5
+//0 1 1 2 3
+
+//Enter how long you would like the sequence to be.10
+//0 1 1 2 3 5 8 13 21 34

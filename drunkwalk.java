@@ -14,24 +14,24 @@ public class drunkwalk
 		Random generator = new Random();
 		pen.down();
 		int m;
-		
+
 		for (x = 0; x <= 250; x++)
 			//Generates random num in between 1 and 4 inclusive
 			m = generator.nextInt(5)+1;
-			double x;
-			double y;
-			
+
 			//Adds or substracts 1 from x or y depending on num generated
 			if (m == 1)
-				x++;
+				pen.turn(90);
+				pen.move(10);
 			if (m == 2)
-				x--;
+				pen.turn(180);
+				pen.move(10);
 			if (m == 3)
-				y++;
+				pen.turn(270);
+				pen.move(10);
 			if (m == 4)
-				y--;
-			//Moves pen to that coordinate each time until x equals 250
-			pen.move(x,y);
-			
+				pen.turn(360);
+				pen.move(10);
+
 	}
 }
