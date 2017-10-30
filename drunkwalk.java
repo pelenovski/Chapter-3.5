@@ -12,7 +12,7 @@ public class drunkwalk
 	public static void main(String[] args)
 	{
 		Random generator = new Random();
-		pen.down();
+		pen.up();
 		int m;
 
 		for (x = 0; x <= 250; x++)
