@@ -19,7 +19,7 @@ public class drunkwalk
 			//Generates random num in between 1 and 4 inclusive
 			m = generator.nextInt(5)+1;
 
-			//Adds or substracts 1 from x or y depending on num generated
+			//turns pen 90 degrees and writes for 10 blocks
 			if (m == 1)
 				pen.turn(90);
 				pen.move(10);
